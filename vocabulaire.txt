@@ -40,34 +40,34 @@ Politically astute	:Politiquement astucieux
  a tricky problem 	: Un problème délicat
  awkward 			: maladroit
  I like hiking, especially on weekends.: J'aime faire de la randonnée, surtout le we
- to hike 		: faire une randonnée
- whenever  		: dès que 
- beyond 		: au-dela
+ to hike 			: faire une randonnée
+ whenever  			: dès que 
+ beyond 			: au-dela
  on the level of thugs and dictators : Au rang de voyous et de dictateurs
- greed 			:"avidité", "cupidité" ou "gourmandise" 
+ greed 				:"avidité", "cupidité" ou "gourmandise" 
  indice fear and greed 	: indice peur et avidité
  its overarching goal 	: son objectif primordial
  It’s a campaign designed for deterrence : Une campagne conçue pour la dissuasion
  Through fire and rubble: A travers le feu et les decombres 
- to thwart 		:contrecarrer
+ to thwart 				:contrecarrer
  standing up both Zelenskyy and Trump  : soutenant à la fois z et t
  live up to 				: répondre aux attentes, être à la hauteur de ou se montrer digne de quelque chose.
  abducts 					: enlevements
  divide the project into 	: diviser le projet en
- to have some difficulties : avoir quelques difficultés
+ to have some difficulties 	: avoir quelques difficultés
  As i am an optimist 	: comme je suis optimiste
  time needed 		: temps nécessaire
  it make you feel very good : ça te fait du bien
  for myself 		: pour moi 
- by fostering 	: en favorisant
- foster 		: favoriser
+ by fostering 		: en favorisant
+ foster 			: favoriser
  I have a problem with my level of English: Mon probleme est mon niveau d'anglais
-to heal 		: guerir
-screwed 		: entubé
-raw			: brute
-Sinners		: pecheur
-out loud 	: a voix haute
-hectic  	:  trepidante, mouvementée
+to heal 			: guerir
+screwed				: entubé
+raw					: cru (non cuit)
+Sinners				: pecheur
+out loud 			: a voix haute
+hectic  			:  trepidante, mouvementée
 Trump champions ‘Golden Age of the Middle East’: T se fait l'avocat de "l'age d'or du moyen orient" 
 a gaggle of geese :trouprau d'oies
 a gaggle 			: Troupeau d"oie, un groupe de personnes bruyantes, désorganisées ou un peu sottes, un briefing informel avec des journalistes
@@ -122,10 +122,40 @@ tip 					: conseil
 In a reversal			:Dans un revirement
 to have backed off 		:avoir renoncé
 a nascent democracy 	:une démocratie naissante
-nascent : naissance (especially of a process or organization)
+nascent 				: naissance (especially of a process or organization)
  to broker a deal.		: negocier un accord
   foretold 				: predite
-  to foretell: 			:predire
+  to foretell 			:predire
   BRICS democracies are losing leverage: Democracy perdent de leur influence
-  deserve : meriter
+  deserve 					: meriter
   the process of settlement with Ukraine:Le processus de reglement
+  harshly and swiftly 		:durement et rapidement
+  swift 					: rapide
+  more targets in their sights. :plus de cibles dans leur viseur.
+  upperhands 				:avantage
+  compel  					:contraindre .
+  wage war 					:faire la guerre
+  sheets of paper			:feuilles de papier
+  for a white swan to bring peace and happiness :pour qu'un cygne blanc apporte paix et bonheur
+  First and foremost.		:D’abord et avant tout.
+   the economic burden		: le fardeau economique
+   the burden: charge, poids , obligation (responsabilité)
+    to overcome 			: surmonter
+	Innovation is the only way to overcome economic & manpower deficits.:L’innovation est le seul moyen de surmonter les déficits économiques et de main-d’œuvre.
+	News outlets 			: Les organes de presse
+	Embolden 				: enhardir
+	they are siblings		:ils sont frères et sœurs
+	sibling 				: frère ou sœur 
+	Totally stealth planes. :Des avions totalement furtifs.
+	Keep calm and carry on. : garder son calme et continuer
+	to shrug  					: hausser les epaules
+	invisibility cloaks		: capes d'invisibilité
+	to cripple 				:paralyser, estropier, handicaper, entraver
+	Putin is leveraging long-range strikes against Ukrainian cities  to degrade Ukrainian morale : Putin s'appuie sur ... pour
+	on behalf of : au nom de 
+	increasingly isolated :de plus en plus isolé
+	to sputter: crachotement, toussotement
+	yond: là-bas
+	needle : aiguille
+	an open hatch: une trappe ouverte
+	his stoicism rings hollow given he

@@ -27,7 +27,5 @@ func main() {
 func readLigne1(ligne string) {
 	var word bg_metier.BgWord = bg_metier.NewBgBgWord(ligne)
 	listWords = append(listWords, word)
-	fmt.Println("Ligne luezzz :", ligne)
-	fmt.Println("Ligne luezzz word :", word)
-
+	fmt.Println("Ligne luezzz word :", word.LabelEn)
 }

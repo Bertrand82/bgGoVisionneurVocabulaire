@@ -1,0 +1,21 @@
+# Fichiers binaires générés par Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Répertoire de compilation
+/build/
+
+# Fichiers de test
+*.test
+
+# Fichiers de couverture de test
+*.out
+
+# Répertoire des dépendances
+/vendor/
+
+# Répertoire à ignorer
+AudioTemp/
