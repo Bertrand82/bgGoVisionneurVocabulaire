@@ -105,7 +105,7 @@ acidic 				: acide
  a little bewildered.	: un peu déconcerté.
 mayor 					: maire
   of plotting  			: de complot
-  streak 				: 1- Marque ou ligne longue et fine ,2 Série ou période continuemean
+  a streak 				: 1- Marque ou ligne longue et fine ,2 Série ou période continuemean
   while 				: pendant que (Conjonction)
   meanwhile 			: pendant ce temps (adverbe)
   war crime probe 		: Enquête sur les crime de guerre
@@ -133,13 +133,13 @@ nascent 				: naissance (especially of a process or organization)
   swift 					: rapide
   more targets in their sights. :plus de cibles dans leur viseur.
   upperhands 				:avantage
-  compel  					:contraindre .
-  wage war 					:faire la guerre
+  to compel  					:contraindre .
+  to wage war 					:faire la guerre
   sheets of paper			:feuilles de papier
   for a white swan to bring peace and happiness :pour qu'un cygne blanc apporte paix et bonheur
   First and foremost.		:D’abord et avant tout.
    the economic burden		: le fardeau economique
-   the burden: charge, poids , obligation (responsabilité)
+   the burden: charge, poids : obligation (responsabilité)
     to overcome 			: surmonter
 	Innovation is the only way to overcome economic & manpower deficits.:L’innovation est le seul moyen de surmonter les déficits économiques et de main-d’œuvre.
 	News outlets 			: Les organes de presse
@@ -156,6 +156,30 @@ nascent 				: naissance (especially of a process or organization)
 	increasingly isolated :de plus en plus isolé
 	to sputter: crachotement, toussotement
 	yond: là-bas
-	needle : aiguille
+	a needle : aiguille
 	an open hatch: une trappe ouverte
-	his stoicism rings hollow given he
+	his stoicism rings hollow : sonstoicisme sonne creux
+	to outperforms.: surpasser
+	but world leaders are not kean on siezing them :mais les dirigeants mondiaux ne sont pas désireux de les saisir
+	 Amid : au milieu de
+	 to stem the communist threat:pour endiguer la menace communiste 
+	to stem the tide:por endiguer la marée
+	are likely leveraging the fact: tirent probablement parti du fait
+	Russians deliberately cover up evidence : Les Russes dissimulent délibérément des preuves
+	 forensic evidence. : preuve medico-legale
+	  it is unvanquished : Elle  est invaincue (La Russie)
+	  It (USA) has bowed to Russia :Les USA se sont inclinés devant la Russie
+	  Joe Biden was the doddering man: Joe Biden était l'homme sénile
+	  who brought the world to the brink of World War III. : qui a amené le monde au bord de la Troisième Guerre mondiale.
+	  It can be swept under the carpet: Ca peut être balayé sous le tapis
+	  whereas  : alors que
+	  the  economic heft : Le poids economique
+	  to heft : souspeser
+	   momentum : élan, dynamisme
+	    into stalemate: en pat, immobilisation du roi
+		avowedly : ouvertement
+		It squandered the opportunities :Il a gaspillé les opportunités
+		burgeoning trade wars :guerres commerciales naissantes
+		a grim economic horizon :un horizon économique sombre
+		for the sake of a stalemated war:au nom d'une guerre dans l'impasse
+		an incoherent jumble: un melange incoherent

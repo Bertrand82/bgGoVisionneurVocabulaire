@@ -75,7 +75,7 @@ func MainUI(listWords []bg_metier.BgWord) error {
 		go playMP3(word.FilePathAudioAU)
 	})
 	buttonAudioNeutre := widget.NewButton("Audio Neutre", func() {
-		go playMP3(word.FilePathAudio)
+		go playMP3(word.FilePathAudioUK2)
 	})
 
 	ligneMenu := container.NewHBox(
