@@ -64,7 +64,7 @@ Politically astute	:Politiquement astucieux
  I have a problem with my level of English: Mon probleme est mon niveau d'anglais
 to heal 			: guerir
 screwed				: entubé
-raw					: cru (non cuit)
+raw eggs			: oeufs cru (non cuit)
 Sinners				: pecheur
 out loud 			: a voix haute
 hectic  			:  trepidante, mouvementée
@@ -114,6 +114,7 @@ mayor 					: maire
   puppet government 	: un gouvernement fantoche
   ISW continues to assess that: isw continue d'estimer
   scathing 				: cinglante
+  The team engaged in meaningful discussions to improve the project's outcomes.:L’équipe a engagé des discussions significatives pour améliorer les résultats du projet.
   in meaningful			: porteur de sens
   nuke 					: lancer une bombe nucléaire sur.
 to pretend 				: faire semblant
@@ -132,15 +133,16 @@ nascent 				: naissance (especially of a process or organization)
   harshly and swiftly 		:durement et rapidement
   swift 					: rapide
   more targets in their sights. :plus de cibles dans leur viseur.
+  she finally gained the upper hand in the deal.:elle a finalement pris le dessus dans l'affaire.
   upperhands 				:avantage
   to compel  					:contraindre .
   to wage war 					:faire la guerre
   sheets of paper			:feuilles de papier
   for a white swan to bring peace and happiness :pour qu'un cygne blanc apporte paix et bonheur
   First and foremost.		:D’abord et avant tout.
-   the economic burden		: le fardeau economique
-   the burden: charge, poids : obligation (responsabilité)
-    to overcome 			: surmonter
+  the economic burden		: le fardeau economique
+  the burden: charge, poids : obligation (responsabilité)
+  to overcome 			: surmonter
 	Innovation is the only way to overcome economic & manpower deficits.:L’innovation est le seul moyen de surmonter les déficits économiques et de main-d’œuvre.
 	News outlets 			: Les organes de presse
 	Embolden 				: enhardir
@@ -165,7 +167,7 @@ nascent 				: naissance (especially of a process or organization)
 	 to stem the communist threat:pour endiguer la menace communiste 
 	to stem the tide:por endiguer la marée
 	are likely leveraging the fact: tirent probablement parti du fait
-	Russians deliberately cover up evidence : Les Russes dissimulent délibérément des preuves
+	Russians deliberately cover up evidence :   Les Russes dissimulent délibérément des preuves
 	 forensic evidence. : preuve medico-legale
 	  it is unvanquished : Elle  est invaincue (La Russie)
 	  It (USA) has bowed to Russia :Les USA se sont inclinés devant la Russie
@@ -173,13 +175,41 @@ nascent 				: naissance (especially of a process or organization)
 	  who brought the world to the brink of World War III. : qui a amené le monde au bord de la Troisième Guerre mondiale.
 	  It can be swept under the carpet: Ca peut être balayé sous le tapis
 	  whereas  : alors que
-	  the  economic heft : Le poids economique
-	  to heft : souspeser
-	   momentum : élan, dynamisme
-	    into stalemate: en pat, immobilisation du roi
-		avowedly : ouvertement
-		It squandered the opportunities :Il a gaspillé les opportunités
-		burgeoning trade wars :guerres commerciales naissantes
+	the  economic heft : Le poids economique
+	to heft : souspeser
+	momentum : élan, dynamisme
+	into stalemate: en pat, immobilisation du roi
+	avowedly : ouvertement
+	It squandered the opportunities :Il a gaspillé les opportunités
+	burgeoning trade wars :guerres commerciales naissantes
 		a grim economic horizon :un horizon économique sombre
 		for the sake of a stalemated war:au nom d'une guerre dans l'impasse
 		an incoherent jumble: un melange incoherent
+		four fruitless attacks:4 attaques infructueuses
+	idle : inactif 
+	to smuggle:passer en contrebande
+	Russia is poised to conclude this conflict in the very near future:La Russie est sur le point de mettre fin à ce conflit dans un avenir très proche… 
+poised:  prêt
+covert operation : opération secrète
+Russia isn’t mighty, it’s weak :r n'est pas puissante,elle est faible
+ a mighty warrior: un guerrier puissant
+It’s printed on your collective mindset: C'est ancré dans votre mentalité collective
+ the immediate vicinity of the airfields.: voisinage immediat
+ The building was fully ablaze within minutes after the fire started.: en flamme
+ on the eve of another round of peace talks  : à la veille d'un ...
+  it was a smear used against anyone who spoke Ukrainian :c'était une diffamation utilisée contre quiconque parlait ukrainien
+the best deterrent is to be prepared :la meilleure dissuasion est d'être préparé
+ modern warfare now goes far beyond the battlefield. : la guerre moderne va désormais bien au-delà du champ de bataille.
+You just need to make them afraid of their own shadow.:peur de son ombre
+the Trojan Horse: Le cheval de Troie
+to toss: jeter
+we could just toss a coin:on pourrait simplement lancer une pièce de monnaie
+Buckle up : Attachez vos ceintures
+A Buckle : Une boucle, attache
+ and hamper Russia’s ability to amass large concentrations of forces :et entraver
+ and Ukrainians braced for retaliation:et les Ukrainiens se préparaient à des représailles
+ their beleaguered nation:leur nation assiégée
+ Moscow had thwarted attacks:a déjoué
+ Stop stalling and answer the question.:Cesse de temporiser et réponds à la question."
+ for  breeding of different fish species: pour l'elevage
+  in next prisoner swap  : echange
