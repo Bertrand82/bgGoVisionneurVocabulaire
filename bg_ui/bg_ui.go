@@ -8,10 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
 
 	"github.com/hajimehoshi/go-mp3"
@@ -19,54 +17,48 @@ import (
 )
 
 var numero int = 0
-var listWords2 []bg_metier.BgWord
+var listWords []bg_metier.BgWord
 var word bg_metier.BgWord
 var isFrenchDisplay = false
 var isAutomatic = false
 var isOrder1 = false
 
-type customTheme struct {
-	fyne.Theme
-}
+var labelNumero = widget.NewLabel("numero : " + strconv.Itoa(numero))
+var labelEnglish = widget.NewLabel(" ")
+var labelFrench = widget.NewLabel(" ")
 
-func MainUI(listWords []bg_metier.BgWord) error {
+var checkboxDisplayIsAutomatic = widget.NewCheck("Auto", func(checked bool) {
+	if checked {
+		isAutomatic = true
+	} else {
+		isAutomatic = false
+	}
+	go playMP3All()
+})
 
+var checkboxDisplayFrench = widget.NewCheck("French", func(checked bool) {
+	if checked {
+		isFrenchDisplay = true
+	} else {
+		isFrenchDisplay = false
+	}
+})
+
+var checkboxOrder1 = widget.NewCheck("Ordre 1", func(checked bool) {
+	if checked {
+		isOrder1 = true
+	} else {
+		isOrder1 = false
+	}
+})
+
+func MainUI(listWordsArg []bg_metier.BgWord) error {
+	listWords = listWordsArg
 	fmt.Println("listWords lenxxx  :", len(listWords))
-	listWords2 = listWords
+
 	word = listWords[0]
 	myApp := app.New()
-
-	//myApp.Settings().SetTheme(customTheme{})
-
 	myWindow := myApp.NewWindow("Interface Simple")
-	labelNumero := widget.NewLabel("numero : " + strconv.Itoa(numero))
-	labelEnglish := widget.NewLabel(word.LabelEn + "  xxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyy")
-	labelFrench := widget.NewLabel("xxx")
-
-	checkboxDisplayIsAutomatic := widget.NewCheck("Auto", func(checked bool) {
-		if checked {
-			isAutomatic = true
-		} else {
-			isAutomatic = false
-		}
-		go playMP3All(labelNumero, labelEnglish, labelFrench)
-	})
-	checkboxDisplayFrench := widget.NewCheck("French", func(checked bool) {
-		if checked {
-			isFrenchDisplay = true
-		} else {
-			isFrenchDisplay = false
-		}
-
-	})
-
-	checkboxOrder1 := widget.NewCheck("Ordre 1", func(checked bool) {
-		if checked {
-			isOrder1 = true
-		} else {
-			isOrder1 = false
-		}
-	})
 
 	buttonNext := widget.NewButton("Next", func() {
 
@@ -77,7 +69,7 @@ func MainUI(listWords []bg_metier.BgWord) error {
 		labelNumero.SetText(" " + strconv.Itoa(numero))
 		var nextWord = listWords[numero]
 		word = nextWord
-		displayWord(labelNumero, labelEnglish, labelFrench, word)
+		displayWord(word)
 
 	})
 
@@ -90,7 +82,14 @@ func MainUI(listWords []bg_metier.BgWord) error {
 		labelNumero.SetText(" " + strconv.Itoa(numero))
 		var nextWord = listWords[numero]
 		word = nextWord
-		displayWord(labelNumero, labelEnglish, labelFrench, word)
+		displayWord(word)
+	})
+	buttonRepeat := widget.NewButton("Repeat", func() {
+
+		labelNumero.SetText(" " + strconv.Itoa(numero))
+		var nextWord = listWords[numero]
+		word = nextWord
+		displayWord(word)
 	})
 
 	buttonTraduction := widget.NewButton("French", func() {
@@ -119,8 +118,9 @@ func MainUI(listWords []bg_metier.BgWord) error {
 		labelEnglish,
 	)
 
-	ligneNextPrevious := container.NewGridWithColumns(2,
+	ligneNextPrevious := container.NewGridWithColumns(3,
 		buttonPrevious,
+		buttonRepeat,
 		buttonNext,
 	)
 
@@ -138,10 +138,11 @@ func MainUI(listWords []bg_metier.BgWord) error {
 	return nil
 }
 
-func displayWord(labelNumero *widget.Label, labelInstruction *widget.Label, labelFrench *widget.Label, word bg_metier.BgWord) {
+func displayWord(word bg_metier.BgWord) {
 	labelNumero.SetText(" " + strconv.Itoa(numero))
-
-	labelInstruction.SetText(word.LabelEn)
+	labelEnglish.SetText(word.LabelEn)
+	isAutomatic = false
+	checkboxDisplayIsAutomatic.SetChecked(false)
 	go playMP3(word.FilePathAudio)
 
 	if isFrenchDisplay {
@@ -151,18 +152,19 @@ func displayWord(labelNumero *widget.Label, labelInstruction *widget.Label, labe
 	}
 
 }
-func playMP3All(labelNumero *widget.Label, labelEnglish *widget.Label, labelFrench *widget.Label) {
+func playMP3All() {
 	for isAutomatic {
 		numero--
 		if numero < 0 {
-			numero = len(listWords2) - 1
+			numero = len(listWords) - 1
 		}
 		labelNumero.SetText(" " + strconv.Itoa(numero))
-		var nextWord = listWords2[numero]
+		var nextWord = listWords[numero]
 		word = nextWord
 		labelEnglish.SetText(word.LabelEn)
 		labelFrench.SetText(word.LabelFr)
 		playMP3(word.FilePathAudioUK)
+		time.Sleep(100 * time.Millisecond)
 	}
 }
 
@@ -197,11 +199,4 @@ func playMP3(filename string) {
 			break
 		}
 	}
-}
-
-func (m customTheme) Size(name fyne.ThemeSizeName) float32 {
-	if name == theme.SizeNameText {
-		return theme.DefaultTheme().Size(name) * 1.2 // Augmente la taille de 20%
-	}
-	return theme.DefaultTheme().Size(name)
 }
