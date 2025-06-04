@@ -2,14 +2,17 @@ package bg_ui
 
 import (
 	"bgGoVisionneurVocabulaire/bg_metier"
+	"bgGoVisionneurVocabulaire/fileutils"
 	"fmt"
 	"log"
 	"os"
 	"strconv"
 	"time"
 
+	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/dialog"
 	"fyne.io/fyne/v2/widget"
 
 	"github.com/hajimehoshi/go-mp3"
@@ -84,6 +87,7 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 		word = nextWord
 		displayWord(word)
 	})
+
 	buttonRepeat := widget.NewButton("Repeat", func() {
 
 		labelNumero.SetText(" " + strconv.Itoa(numero))
@@ -109,8 +113,24 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 		go playMP3(word.FilePathAudio_US_2)
 	})
 
+	buttonChooseFile := widget.NewButton("Ouvrir un fichier", func() {
+		dialog.ShowFileOpen(func(reader fyne.URIReadCloser, err error) {
+			if err != nil {
+				fmt.Println("Erreur :", err)
+				return
+			}
+			if reader == nil {
+				fmt.Println("Aucun fichier sélectionné")
+				return
+			}
+			fmt.Println("Fichier sélectionné :", reader.URI().Path())
+			readFile(reader)
+			reader.Close()
+		}, myWindow)
+	})
+
 	ligneMenu := container.NewHBox(
-		checkboxOrder1, checkboxDisplayFrench, checkboxDisplayIsAutomatic, buttonAudioNeutre, buttonAudioUK, buttonAudioAU, buttonAudioUS2,
+		checkboxOrder1, checkboxDisplayFrench, checkboxDisplayIsAutomatic, buttonAudioNeutre, buttonAudioUK, buttonAudioAU, buttonAudioUS2, buttonChooseFile,
 	)
 
 	ligneHaut := container.NewHBox(
@@ -138,6 +158,10 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 	return nil
 }
 
+func readFile(reader fyne.URIReadCloser) {
+	fmt.Println("Fichier sélectionné222 :", reader.URI().Path())
+	listWords = fileutils.Lire_fichier_by_name(reader.URI().Path())
+}
 func displayWord(word bg_metier.BgWord) {
 	labelNumero.SetText(" " + strconv.Itoa(numero))
 	labelEnglish.SetText(word.LabelEn)

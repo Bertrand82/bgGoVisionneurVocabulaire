@@ -1,27 +1,27 @@
 package fileutils
 
 import (
-	"bufio"
+	"bgGoVisionneurVocabulaire/bg_metier"
 	"fmt"
-	"os"
+	"log"
 )
 
-// LireFichierLignes lit un fichier texte ligne par ligne et applique une fonction de traitement à chaque ligne.
-func LireFichierLignes(nomFichier string, traiterLigne func(string)) error {
-	fichier, err := os.Open(nomFichier)
+var ListWords []bg_metier.BgWord
+
+func Lire_fichier_by_name(nomFichier string) []bg_metier.BgWord {
+	// Je reinitialise la liste
+	ListWords = []bg_metier.BgWord{}
+	err := LireFichierLignes(nomFichier, readLigne1)
+	fmt.Println("listWords len:", len(ListWords))
 	if err != nil {
-		return fmt.Errorf("erreur lors de l'ouverture du fichier %s : %v", nomFichier, err)
+		log.Fatalf("Une erreur est survenue : %v", err)
+		return nil
 	}
-	defer fichier.Close()
+	return ListWords
+}
 
-	scanner := bufio.NewScanner(fichier)
-	for scanner.Scan() {
-		traiterLigne(scanner.Text())
-	}
-
-	if err := scanner.Err(); err != nil {
-		return fmt.Errorf("erreur lors de la lecture du fichier %s : %v", nomFichier, err)
-	}
-
-	return nil
+func readLigne1(ligne string) {
+	var word bg_metier.BgWord = bg_metier.NewBgBgWord(ligne)
+	ListWords = append(ListWords, word)
+	fmt.Println("Ligne luezzz word :", word.LabelEn)
 }
