@@ -28,6 +28,7 @@ type BgWord struct {
 	FilePathAudioAU    string
 	FilePathAudio_US_1 string
 	FilePathAudio_US_2 string
+	FilePathAudio_IN_1 string
 }
 
 const tempDir string = "AudioTemp"
@@ -36,6 +37,7 @@ const tempDirAudioUK string = tempDir + "\\" + "UK"
 const tempDirAudioUK2 string = tempDir + "\\" + "UK_2"
 const tempDirAudioAU string = tempDir + "\\" + "AU"
 const tempDirAudioUS string = tempDir + "\\" + "US"
+const tempDirAudioIndian string = tempDir + "\\" + "IN"
 
 func NewBgBgWord(line string) BgWord {
 	before, after, findToken := strings.Cut(line, ":")
@@ -49,7 +51,8 @@ func NewBgBgWord(line string) BgWord {
 		var pathEnglish_2 = recordMP3_hegedustibor(tempDirAudio, fileName, before, voices.English)
 		var pathEnglish_US_1 = recordMP3_googleAPI(tempDirAudioUK2, fileName, before, "en_GB", "en-GB-Wavenet-D")
 		var pathEnglish_US_2 = recordMP3_googleAPI(tempDirAudioUS, fileName, before, "en-US", "en-US-Neural2-G")
-
+		var pathEnglish_IN = recordMP3_googleAPI(tempDirAudioIndian, fileName, before, "en-IN", "en-IN-Neural2-A")
+		//en-IN-Neural2-A
 		objet := BgWord{
 			LabelEn:            before,
 			LabelFr:            after,
@@ -61,6 +64,7 @@ func NewBgBgWord(line string) BgWord {
 			FilePathAudioAU:    pathEnglishAU_2,
 			FilePathAudio_US_1: pathEnglish_US_1,
 			FilePathAudio_US_2: pathEnglish_US_2,
+			FilePathAudio_IN_1: pathEnglish_IN,
 		}
 
 		// Affichage des champs de l'objet

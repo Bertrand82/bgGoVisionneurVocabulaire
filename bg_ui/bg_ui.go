@@ -22,7 +22,8 @@ import (
 var numero int = 0
 var listWords []bg_metier.BgWord
 var word bg_metier.BgWord
-var isFrenchDisplay = false
+var isFrenchDisplay = true
+var isEnglishDisplay = true
 var isAutomatic = false
 var isOrder1 = false
 
@@ -47,6 +48,14 @@ var checkboxDisplayFrench = widget.NewCheck("French", func(checked bool) {
 	}
 })
 
+var checkboxDisplayEnglish = widget.NewCheck("English", func(checked bool) {
+	if checked {
+		isEnglishDisplay = true
+	} else {
+		isEnglishDisplay = false
+	}
+})
+
 var checkboxOrder1 = widget.NewCheck("Ordre 1", func(checked bool) {
 	if checked {
 		isOrder1 = true
@@ -54,7 +63,7 @@ var checkboxOrder1 = widget.NewCheck("Ordre 1", func(checked bool) {
 		isOrder1 = false
 	}
 })
-var isAudioUK = false
+var isAudioUK = true
 var checkboxAudioUK = widget.NewCheck("Audio UK", func(checked bool) {
 	if checked {
 		isAudioUK = true
@@ -87,12 +96,37 @@ var checkboxAudioUS2 = widget.NewCheck("US", func(checked bool) {
 		isAudioUS2 = false
 	}
 })
+var isAudioIN = false
+var checkboxAudioIn = widget.NewCheck("Indian", func(checked bool) {
+	if checked {
+		isAudioIN = true
+	} else {
+		isAudioIN = false
+	}
+})
+
+var buttonReset = widget.NewButton("Reset", func() {
+
+	numero = 0
+	displayWord(word)
+
+})
+
+var buttonTraduction = widget.NewButton("French", func() {
+
+	labelFrench.SetText(word.LabelFr)
+})
+var buttonTraductionEnglish = widget.NewButton("English", func() {
+
+	labelEnglish.SetText(word.LabelEn)
+})
 
 func MainUI(listWordsArg []bg_metier.BgWord) error {
 	listWords = listWordsArg
 	fmt.Println("listWords lenxxx  :", len(listWords))
 
 	word = listWords[0]
+
 	myApp := app.New()
 	myWindow := myApp.NewWindow("Interface Simple")
 
@@ -129,10 +163,6 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 		displayWord(word)
 	})
 
-	buttonTraduction := widget.NewButton("French", func() {
-
-		labelFrench.SetText(word.LabelFr)
-	})
 	buttonAudioUK := widget.NewButton("Audio UK", func() {
 		go playMP3File(word.FilePathAudioUK)
 	})
@@ -163,10 +193,10 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 	})
 
 	ligneMenu1 := container.NewHBox(
-		checkboxOrder1, checkboxDisplayFrench, checkboxDisplayIsAutomatic, buttonAudioNeutre, buttonAudioUK, buttonAudioAU, buttonAudioUS2, buttonChooseFile,
+		checkboxOrder1, checkboxDisplayFrench, checkboxDisplayEnglish, checkboxDisplayIsAutomatic, buttonReset, buttonAudioNeutre, buttonAudioUK, buttonAudioAU, buttonAudioUS2, buttonChooseFile,
 	)
 	ligneMenu2 := container.NewHBox(
-		checkboxAudioNeutre, checkboxAudioUK, checkboxAudioAU, checkboxAudioUS2)
+		checkboxAudioNeutre, checkboxAudioUK, checkboxAudioAU, checkboxAudioUS2, checkboxAudioIn)
 
 	ligneHaut := container.NewHBox(
 		labelNumero,
@@ -179,18 +209,23 @@ func MainUI(listWordsArg []bg_metier.BgWord) error {
 		buttonNext,
 	)
 
+	ligneFinal := container.NewGridWithColumns(2, buttonTraduction, buttonTraductionEnglish)
+
 	contenu := container.NewVBox(
 		ligneMenu1,
 		ligneMenu2,
 		ligneHaut,
 		ligneNextPrevious,
-		buttonTraduction,
+		ligneFinal,
 		labelFrench,
 	)
 
 	myWindow.SetContent(contenu)
-	myWindow.ShowAndRun()
 
+	checkboxDisplayFrench.SetChecked(isFrenchDisplay)
+	checkboxDisplayEnglish.SetChecked(isEnglishDisplay)
+	checkboxAudioUK.SetChecked(isAudioUK)
+	myWindow.ShowAndRun()
 	return nil
 }
 
@@ -200,7 +235,11 @@ func readFile(reader fyne.URIReadCloser) {
 }
 func displayWord(word bg_metier.BgWord) {
 	labelNumero.SetText(" " + strconv.Itoa(numero))
-	labelEnglish.SetText(word.LabelEn)
+	if isEnglishDisplay {
+		labelEnglish.SetText(word.LabelEn)
+	} else {
+		labelEnglish.SetText("")
+	}
 	isAutomatic = false
 	checkboxDisplayIsAutomatic.SetChecked(false)
 	go playMP3(word)
@@ -241,12 +280,15 @@ func playMP3(word bg_metier.BgWord) {
 	if isAudioUS2 {
 		playMP3File(word.FilePathAudio_US_2)
 	}
+	if isAudioIN {
+		playMP3File(word.FilePathAudio_IN_1)
+	}
 }
 func playMP3File(filename string) {
 
 	f, err := os.Open(filename)
 	if err != nil {
-		log.Fatal(err)
+		log.Print(err)
 		return
 	}
 	defer f.Close()
