@@ -108,6 +108,7 @@ var checkboxAudioIn = widget.NewCheck("Indian", func(checked bool) {
 var buttonReset = widget.NewButton("Reset", func() {
 
 	numero = 0
+
 	displayWord(word)
 
 })

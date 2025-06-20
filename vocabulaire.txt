@@ -9,7 +9,7 @@ has gone viral  	: est devenu viral
 we will need to take further steps : Nous devrons prendre d'autres mesures
 further 			:  À l'origine, "further" n'était pas directement lié au mot "far" (loin), mais était plutôt le comparatif de "forth" (en avant), exprimant une idée de progression ou d'avancement .
 a steer				: un boeuf
-to sterr 			: diriger (direct, run, conduct, manage, steer, guide), guider (guide, lead, direct, steer, shepherd, pilot)
+to steer 			: diriger (direct, run, conduct, manage, steer, guide), guider (guide, lead, direct, steer, shepherd, pilot)
 to dispense justice for their sins : rendre (dispenser) la justice pour leur péchés
 Another reminder of why I voted for him.  : Un autre rappel des raisons pour lesquelles j'ai voté pour lui.
 Our moral compass 	: notre boussole morale
@@ -201,10 +201,10 @@ It’s printed on your collective mindset: C'est ancré dans votre mentalité co
 a smear : une tache, une sallissure
 the best deterrent is to be prepared :la meilleure dissuasion est d'être préparé
  modern warfare now goes far beyond the battlefield. : la guerre moderne va désormais bien au-delà du champ de bataille.
-You just need to make them afraid of their own shadow.:peur de son ombre
+You just need to make them afraid of their own shadow.:on doit seulement faire qu'ils aient peur de leur ombre
 the Trojan Horse: Le cheval de Troie
-to toss: jeter
 we could just toss a coin:on pourrait simplement lancer une pièce de monnaie
+to toss: jeter
 Buckle up : Attachez vos ceintures
 A Buckle : Une boucle, attache
  and hamper Russia’s ability to amass large concentrations of forces :et entraver
@@ -229,15 +229,15 @@ A Buckle : Une boucle, attache
   the lamest opposition: l'opposition la plus minable
    laundry:lessive
    Nevertheless, they are complicit.:néanmoins, ils sont complices
-   a rising threat froma rising threat from an old foe...:une menace emmergente d'un viel ennemi
+   a rising threat from an old foe...:une menace emmergente d'un viel ennemi
    he  dodges the question: il evita la question
    arms race: course aux armements
    to settle the feud.: regler la querelle
-   All the passengers are safe and unharmed.:sains et saufs
+   All the passengers are safe and unharmed.:tous les passagers sont sains et saufs
    he  is a certified Russian asset: ils est un agent russe certifié.
-   steering: pilotage
-   steering wheel: volant, barre
+steering wheel: volant, barre
 steering committee : comité de pilotage
+steering: pilotage
 outdoor gear: équipement d'extérieur
 Ukraine’s battlefield prospects against Russia clearly dimmed : Les perspectives de l'Ukraine sur le champ de bataille face à la Russie sont clairement assombries.
 clearly dimmed: clairement diminué
@@ -246,9 +246,53 @@ narrow : étroit
 As long as the Ukrainians’ determination to fight on is undiminished:sans être diminuée
 undiminished:sans être diminuée
 he grasps that: il comprend que
-to more than mere words:paroles en l'air
+to more than mere words:plus que des paroles en l'air
 mere:simple
 recast: refonte
 the lion’s share: la part du lion
 howitzers : obusier
-   
+Selfish:egoiste
+verifiable sanctions relief: une allegement vérifiable des sanctions
+relief:allegement
+World Bank Forecast: prevision de la banque mondiale
+with cunning : avec ruse
+he grasps that : Il comprends que
+undiminished : non diminué
+overwhelmingly : écrasante
+heap:tas
+History will remember who helped ending the war and who hindered it.:qui aida et qui entrava
+to hinder : entraver
+But the excessive gloom is  counterproductive.:Mais cette morosité excessive est  contre-productive.
+Brexit was never about sovereignty. It was a con.: C'etait une arnaque
+The new deadline was designed to compel the team to reassess their priorities and accelerate progress.: pour obliger l'equipe à re-evaluer ses priorités
+The Kremlin continues to crack down on critical Russian milbloggers as part of its years-long effort to censor and control the Russian information space.:le kremlin continue à réprimer
+Trump’s Immigration Crackdown Hits California Farms:La répression de Trump contre l'immigration frappe les fermes californiennes
+Crackdown:repression
+Mr. N has thrown caution to the wind:a jeté au vent
+N could bolster his national standing ahead of a general election next year: 
+bolster:renforcer
+Washington’s stance may complicate European efforts to target Russia’s oil revenues.:La position de washington ...
+stance : position
+in despite international pleas for de-escalation.:appels
+a plea :un appel
+The country’s economy is in shambles:l'economie du pays est en ruine
+in shambles:en ruine
+Smuggling Is Potent New War Weapon:Le trafic de drones est une nouvelle arme de guerre puissante.
+Potent:puissant
+Trump Talks Big on Global Diplomacy, but His Goals Are in Tatters: en miettes
+President Trump is weighing a critical decision:evalue
+To weigh: peser, souspeser; evaluer
+Trump administration shelved an inter-agency working group to pressure Russia into speeding up peace talks with Ukraine: a suspendu
+to shelve:suspendre
+Despite Close Ties With Iran, Russia Stands Aside as Israel Attacks: reste à l'ecart
+aside: à l'écart
+the theocratic zealots:les fanatiques theocratiques
+An Islamic Republic With Its Back Against the Wall:dos au mur
+while presiding over a domestic economic disaster and stifling paralysis.:tout en présidant à un désastre économique national et à une paralysie étouffante.
+stifle : etoufer
+ I watched thugs repeatedly beat brave women demanding dignity and freedom: J'ai vu des voyous  battre à plusieurs reprises des femmes courageuses qui réclamaient dignité et liberté.
+  thug:voyou
+  the thumb :le pouce4
+   refused to trample on U.S flag : a refusé de pietuner le drapeau americain
+
+
